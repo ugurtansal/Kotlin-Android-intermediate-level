@@ -7,6 +7,10 @@ android {
     namespace = "com.ugurtansal.kotlinandroidintermediate"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.ugurtansal.kotlinandroidintermediate"
         minSdk = 26
