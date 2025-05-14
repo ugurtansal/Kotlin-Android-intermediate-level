@@ -69,4 +69,5 @@ class lifeCycleFragment : Fragment() {
     }
 
 
+
 }
