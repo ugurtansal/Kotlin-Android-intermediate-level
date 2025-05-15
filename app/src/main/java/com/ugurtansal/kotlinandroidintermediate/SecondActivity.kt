@@ -1,14 +1,10 @@
-package com.ugurtansal.kotlinandroidintermediate.lifecycle
+package com.ugurtansal.kotlinandroidintermediate
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.ugurtansal.kotlinandroidintermediate.MainActivity
-import com.ugurtansal.kotlinandroidintermediate.R
-import com.ugurtansal.kotlinandroidintermediate.databinding.ActivityMainBinding
 import com.ugurtansal.kotlinandroidintermediate.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
