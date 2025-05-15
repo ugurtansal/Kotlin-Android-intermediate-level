@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.ugurtansal.kotlinandroidintermediate.databinding.ActivityMainBinding
 import com.ugurtansal.kotlinandroidintermediate.databinding.FragmentLifeCycleBinding
-import com.ugurtansal.kotlinandroidintermediate.lifecycle.SecondActivity
+import com.ugurtansal.kotlinandroidintermediate.SecondActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
