@@ -78,7 +78,32 @@ class MainActivity : AppCompatActivity() {
 
             //Intent
             val intent= Intent(this, SecondActivity::class.java) //SecondActivity::class.java => SecondActivity'e referans veriyoruz
+            val userInput=binding.editText.text.toString()
+            intent.putExtra("name",userInput) //key-value şeklinde veri gönderiyoruz
             startActivity(intent)
+            //finish() //Sayfayı destroy eder , yani geri dönüş tuşuyla tekrar açılmaz
+
+            //INTENT
+//            Ne işe yarar?
+//            Activity başlatmak
+//
+//                    Activity'e veri göndermek (putExtra)
+//
+//            Sistem işlemlerini başlatmak (kamera açmak, çağrı yapmak)
+//
+//            Servis/Receiver tetiklemek
+//
+//            📦 Kapsamı:
+//            Daha çok Activity'ler arası geçiş
+//
+//            Fragment'lar arasında doğrudan kullanılmaz
+
+//            Intent, daha düşük seviyeli ve temel bir mekanizmadır.
+//
+//            Navigation, modern Android uygulamalarında Fragment tabanlı yapılar için önerilir.
+//
+//            Eğer Activity'den Activity'e geçiyorsan Intent,
+//            Fragment'tan Fragment'a geçiyorsan Navigation Component kullanmalısın.
         }
 
     }

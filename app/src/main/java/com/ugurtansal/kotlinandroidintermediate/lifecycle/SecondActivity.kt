@@ -20,9 +20,9 @@ class SecondActivity : AppCompatActivity() {
             insets
         }
 
-        fun openFirstActivity() {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+//        fun openFirstActivity() {
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }
