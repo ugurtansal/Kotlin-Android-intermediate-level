@@ -12,16 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinAndroidIntermediate"
         tools:targetApi="31">
-
         <activity
-            android:name=".sharedPreferences.sharedPrefActivity"
+            android:name=".recyclerView.DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.RecyclerViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".sharedPreferences.sharedPrefActivity"
+            android:exported="false" />
         <activity
             android:name=".alertDialog.AlertDialogActivity"
             android:exported="false" />
@@ -35,4 +40,5 @@
             android:name=".MainActivity"
             android:exported="false" />
     </application>
+
 </manifest>
