@@ -23,11 +23,13 @@ class DisplayActivity : AppCompatActivity() {
 
        // val dataFromAdapter=intent.getSerializableExtra("superhero", Superhero::class.java)  //For new versions
 
-        val dataFromAdapter=intent.getSerializableExtra("superhero") as Superhero
+       // val dataFromAdapter=intent.getSerializableExtra("superhero") as Superhero //without singleton
 
-        binding.imageView.setImageResource(dataFromAdapter.image)
-        binding.tvName.text=dataFromAdapter.name
-        binding.tvJob.text=dataFromAdapter.job
+        val dataFromAdapter=MySingleton.selectedSuperHero
+
+        binding.imageView.setImageResource(dataFromAdapter!!.image)
+        binding.tvName.text=dataFromAdapter!!.name
+        binding.tvJob.text=dataFromAdapter!!.job
 
     }
 }

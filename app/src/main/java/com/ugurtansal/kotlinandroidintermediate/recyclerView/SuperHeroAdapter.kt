@@ -26,7 +26,8 @@ class SuperHeroAdapter (val superheroList: ArrayList<Superhero>): RecyclerView.A
        holder.binding.textViewRecyclerView.text=superheroList.get(position).name
         holder.binding.textViewRecyclerView.setOnClickListener {
             val intent= Intent(holder.itemView.context,DisplayActivity::class.java)
-            intent.putExtra("superhero",superheroList.get(position))
+            MySingleton.selectedSuperHero=superheroList.get(position) //with singleton
+           // intent.putExtra("superhero",superheroList.get(position)) //without singleton
             holder.itemView.context.startActivity(intent)
         }
     }
